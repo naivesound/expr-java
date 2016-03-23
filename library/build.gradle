@@ -1,0 +1,18 @@
+apply plugin: 'java'
+
+repositories {
+	jcenter()
+}
+
+dependencies {
+  testCompile 'junit:junit:4.+'
+}
+
+compileJava {
+  options.encoding = 'UTF-8'
+  options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+}
+compileTestJava {
+  options.encoding = 'UTF-8'
+  options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+}
