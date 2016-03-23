@@ -36,10 +36,10 @@ public class ExprTest {
 				return acc;
 			}
 		};
-		Expr.Const two = new Expr.Const(2);
+		Expr two = new Expr.Const(2);
 		Expr.Var x = new Expr.Var(0);
 		Expr.FuncContext<Float> sum = new Expr.FuncContext<Float>(f, Arrays.asList(two), null);
-		Expr.FuncContext<Float> sumVar = new Expr.FuncContext<Float>(f, Arrays.asList(x), null);
+		Expr.FuncContext<Float> sumVar = new Expr.FuncContext<Float>(f, Arrays.asList((Expr) x), null);
 
 		assertThat(sum.eval(), is(2f));
 		assertThat(sum.eval(), is(4f));
