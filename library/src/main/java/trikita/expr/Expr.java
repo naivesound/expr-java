@@ -288,7 +288,7 @@ public interface Expr {
 							} else {
 								c = 0;
 							}
-								}
+						}
 						if (lastOp == null) {
 							return null; // Bad operator
 						}
