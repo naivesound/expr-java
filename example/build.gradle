@@ -1,0 +1,12 @@
+apply plugin: 'application'
+
+mainClassName = 'com.example.App'
+
+repositories {
+	maven { url "https://jitpack.io" }
+}
+
+dependencies {
+	//compile 'com.github.naivesound:expr-java:-SNAPSHOT'
+	compile project(':library')
+}

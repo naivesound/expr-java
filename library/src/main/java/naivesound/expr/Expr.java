@@ -165,7 +165,7 @@ public interface Expr {
 		protected final Func<T> f;
 		protected final List<Expr> args;
 		protected final Map<String,Var> vars;
-		protected T env;
+		public T env;
 		public FuncContext(Func<T> f, List<Expr> args, Map<String, Var> vars) {
 			this.f = f;
 			this.args = args;
