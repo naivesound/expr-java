@@ -161,7 +161,7 @@ public interface Expr {
 		public float eval(FuncContext<T> c);
 	}
 
-	class FuncContext<T> implements Expr {
+	public class FuncContext<T> implements Expr {
 		protected final Func<T> f;
 		protected final List<Expr> args;
 		protected final Map<String,Var> vars;
